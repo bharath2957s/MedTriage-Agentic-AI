@@ -20,24 +20,24 @@ An Agentic AI-powered medical triage system that orchestrates multiple specializ
                                   │ REST API
                                   ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                        FastAPI Backend                           │
+│                        FastAPI Backend                          │
 │                  /api/questions  /api/triage                    │
 └─────────────────────────────────┬───────────────────────────────┘
                                   │
                                   ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                    LangGraph Workflow Engine                      │
-│                                                                  │
-│   ┌──────────┐     ┌──────────┐     ┌──────────┐               │
-│   │  Intake  │────▶│  Critic  │────▶│  Triage  │               │
-│   │  Agent   │     │  Agent   │     │  Agent   │               │
+│                    LangGraph Workflow Engine                    │
+│                                                                 │
+│   ┌──────────┐     ┌──────────┐     ┌──────────┐                │
+│   │  Intake  │────▶│  Critic  │────▶│  Triage │                │
+│   │  Agent   │     │  Agent   │     │  Agent   │                │
 │   └──────────┘◀────└──────────┘     └────┬─────┘               │
 │       ▲  (reflection loop)               │                      │
 │       │                                  ▼                      │
-│   ┌───┴──────┐                    ┌──────────────┐             │
-│   │Escalation│                    │  Synthesis   │             │
-│   │ Handler  │                    │    Agent     │             │
-│   └──────────┘                    └──────────────┘             │
+│   ┌───┴──────┐                    ┌──────────────┐              │
+│   │Escalation│                    │  Synthesis   │              │
+│   │ Handler  │                    │    Agent     │              │
+│   └──────────┘                    └──────────────┘              │
 └─────────────────────────────────────────────────────────────────┘
                                   │
                                   ▼
