@@ -124,7 +124,7 @@ medical_triage/
 ### Step 1 — Clone & Install
 
 ```bash
-git clone https://github.com/bharath2957s/MedTriage-Agentic-AI?tab=readme-ov-file#-medtriage--agentic-ai-clinical-decision-support-system
+git clone https://github.com/bharath2957s/MedTriage-Agentic-AI
 cd medical_triage
 
 python -m venv venv
